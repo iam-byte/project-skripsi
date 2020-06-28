@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <item
+        android:id="@+id/navigation_home"
+        android:icon="@drawable/ic_home_black_24dp"
+        android:title="@string/title_home" />
+    <item
+        android:id="@+id/navigation_user_mesin"
+        android:icon="@drawable/ic_home_black_24dp"
+        android:title="@string/title_home"
+       />
+
+    <item
+        android:id="@+id/navigation_cari_die"
+        android:icon="@drawable/ic_view"
+        android:title="@string/title_home"
+        android:onClick="cariData"
+        />
+
+    <item
+        android:id="@+id/navigation_dashboard"
+        android:icon="@drawable/ic_communication"
+        android:title="@string/communication" />
+
+    <item
+        android:id="@+id/navigation_logout"
+        android:icon="@drawable/ic_more"
+        android:onClick="logout"
+        android:title="More"/>
+
+</menu>

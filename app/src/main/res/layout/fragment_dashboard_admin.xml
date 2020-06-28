@@ -1,0 +1,254 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <androidx.appcompat.widget.Toolbar
+        android:id="@+id/toolbar"
+        app:title="@string/title_dashboard"
+        android:theme="@style/ThemeGreyToolbar"
+        app:titleTextColor="@android:color/white"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/colorPrimary" />
+
+    <RelativeLayout
+        android:id="@+id/head"
+        android:layout_width="match_parent"
+        android:layout_height="110dp"
+        android:layout_below="@+id/toolbar"
+        android:background="@drawable/gradient_1"
+        android:orientation="vertical">
+
+        <de.hdodenhof.circleimageview.CircleImageView
+            android:id="@+id/imageView"
+            android:layout_width="70dp"
+            android:layout_height="70dp"
+            android:layout_alignParentTop="true"
+            android:layout_marginStart="20dp"
+            android:layout_marginTop="20dp"
+            android:src="@drawable/ic_account"
+            app:civ_border_color="@android:color/white"
+            app:civ_border_width="2dp" />
+
+        <TextView
+            android:id="@+id/title"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentTop="true"
+            android:layout_marginStart="15dp"
+            android:layout_marginTop="30dp"
+            android:layout_marginEnd="20dp"
+            android:layout_toEndOf="@+id/imageView"
+            android:singleLine="true"
+            android:text=""
+            android:textColor="@android:color/white"
+            android:textSize="25sp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/sebagai"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/title"
+            android:layout_marginStart="15dp"
+            android:layout_marginEnd="20dp"
+            android:layout_toEndOf="@+id/imageView"
+            android:singleLine="true"
+            android:text="Admin"
+            android:textColor="@android:color/white" />
+
+
+    </RelativeLayout>
+
+<!--    <ImageView-->
+<!--        android:id="@+id/out"-->
+<!--        android:layout_width="wrap_content"-->
+<!--        android:layout_height="wrap_content"-->
+<!--        android:layout_alignParentEnd="true"-->
+<!--        android:layout_marginTop="10dp"-->
+<!--        android:layout_marginEnd="10dp"-->
+<!--        android:src="@drawable/ic_power"-->
+<!--        android:tint="@color/colorWhite" />-->
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/head"
+        android:gravity="center"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:paddingTop="30dp">
+
+            <androidx.cardview.widget.CardView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginStart="18dp"
+                android:layout_marginEnd="8dp"
+                android:layout_marginBottom="25dp"
+                android:layout_weight="1"
+                app:cardBackgroundColor="#E0C4CC"
+                app:cardCornerRadius="8dp"
+                app:cardElevation="8dp">
+
+                <Button
+                    android:id="@+id/kelola_user"
+                    android:layout_width="match_parent"
+                    android:layout_height="90dp"
+                    android:background="@color/colorTransparen"
+                    android:drawableTop="@drawable/ic_account_box"
+                    android:drawableTint="@color/colorWhite"
+                    android:paddingTop="20dp"
+                    android:text="Kelola User"
+                    android:textColor="@color/colorWhite" />
+            </androidx.cardview.widget.CardView>
+
+            <androidx.cardview.widget.CardView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginStart="8dp"
+                android:layout_marginEnd="18dp"
+                android:layout_marginBottom="25dp"
+                android:layout_weight="1"
+                app:cardBackgroundColor="#93DB97"
+                app:cardCornerRadius="8dp"
+                app:cardElevation="8dp">
+
+                <Button
+                    android:id="@+id/kelola_pembuatan"
+                    android:layout_width="match_parent"
+                    android:layout_height="90dp"
+                    android:background="@color/colorTransparen"
+                    android:drawableTop="@drawable/ic_build"
+                    android:drawableTint="@color/colorWhite"
+                    android:paddingTop="20dp"
+                    android:text="Pembuatan Die Cut"
+                    android:textColor="@color/colorWhite" />
+            </androidx.cardview.widget.CardView>
+
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:paddingTop="15dp">
+
+            <androidx.cardview.widget.CardView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="18dp"
+                android:layout_marginEnd="8dp"
+                android:layout_marginBottom="25dp"
+                android:layout_weight="1"
+                app:cardBackgroundColor="#E9704E"
+                app:cardCornerRadius="8dp"
+                app:cardElevation="8dp">
+
+                <Button
+                    android:id="@+id/customer"
+                    android:layout_width="match_parent"
+                    android:layout_height="90dp"
+                    android:background="@color/colorTransparen"
+                    android:drawableTop="@drawable/ic_list"
+                    android:drawableTint="@color/colorWhite"
+                    android:paddingTop="20dp"
+                    android:text="CUSTOMER"
+                    android:textColor="@color/colorWhite" />
+            </androidx.cardview.widget.CardView>
+
+
+            <androidx.cardview.widget.CardView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="8dp"
+                android:layout_marginEnd="18dp"
+                android:layout_marginBottom="25dp"
+                android:layout_weight="1"
+                app:cardBackgroundColor="#07B8A7"
+                app:cardCornerRadius="8dp"
+                app:cardElevation="8dp">
+
+                <Button
+                    android:id="@+id/all_mesin"
+                    android:layout_width="match_parent"
+                    android:layout_height="90dp"
+                    android:background="@color/colorTransparen"
+                    android:drawableTop="@drawable/ic_laporan"
+                    android:drawableTint="@color/colorWhite"
+                    android:paddingTop="20dp"
+                    android:text="ALL MESIN"
+                    android:textColor="@color/colorWhite" />
+
+            </androidx.cardview.widget.CardView>
+
+
+        </LinearLayout>
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:paddingTop="15dp"
+            android:paddingBottom="30dp">
+
+            <androidx.cardview.widget.CardView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="18dp"
+                android:layout_marginEnd="8dp"
+                android:layout_marginBottom="15dp"
+                android:layout_weight="1"
+                app:cardBackgroundColor="#E2DB99"
+                app:cardCornerRadius="8dp"
+                app:cardElevation="8dp">
+
+                <Button
+                    android:id="@+id/all_item"
+                    android:layout_width="match_parent"
+                    android:layout_height="90dp"
+                    android:background="@color/colorTransparen"
+                    android:drawableTop="@drawable/ic_list"
+                    android:drawableTint="@color/colorWhite"
+                    android:paddingTop="20dp"
+                    android:text="All item die cut"
+                    android:textColor="@color/colorWhite" />
+            </androidx.cardview.widget.CardView>
+
+
+            <androidx.cardview.widget.CardView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="8dp"
+                android:layout_marginEnd="18dp"
+                android:layout_marginBottom="15dp"
+                android:layout_weight="1"
+                app:cardBackgroundColor="#ACB5DD"
+                app:cardCornerRadius="8dp"
+                app:cardElevation="8dp">
+
+                <Button
+                    android:id="@+id/laporan"
+                    android:layout_width="match_parent"
+                    android:layout_height="90dp"
+                    android:background="@color/colorTransparen"
+                    android:drawableTop="@drawable/ic_laporan"
+                    android:drawableTint="@color/colorWhite"
+                    android:paddingTop="20dp"
+                    android:text="Laporan"
+                    android:textColor="@color/colorWhite" />
+
+            </androidx.cardview.widget.CardView>
+
+
+        </LinearLayout>
+    </LinearLayout>
+</RelativeLayout>

@@ -1,0 +1,20 @@
+<resources>
+    <string name="app_name">Inventori Diecut</string>
+    <string name="title_activity_dashboard">Dashboard</string>
+    <string name="title_home">Home</string>
+    <string name="title_dashboard">Dashboard</string>
+    <string name="title_notifications">Notifications</string>
+    <string name="title_activity_user">UserActivity</string>
+
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="communication">Communication</string>
+    <string name="logout">Logout</string>
+    <string name="built_by_budyfriend_2020">Built by Budyfriend - 2020</string>
+
+    <string-array name="array_pilihan">
+        <item name="sandi">Ubah Sandi</item>
+        <item name="sandi">Ubah Photo Profile</item>
+        <item name="sandi">Logout</item>
+    </string-array>
+</resources>

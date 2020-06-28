@@ -1,0 +1,48 @@
+{
+  "project_info": {
+    "project_number": "489234424043",
+    "firebase_url": "https://diecut-1cbf7.firebaseio.com",
+    "project_id": "diecut-1cbf7",
+    "storage_bucket": "diecut-1cbf7.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:489234424043:android:06db726c09ee2a14b45eae",
+        "android_client_info": {
+          "package_name": "com.ilham.inventoridiecut"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "489234424043-u912djveiodm4qn9q5b5k1ba76t6fu4q.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.ilham.inventoridiecut",
+            "certificate_hash": "35d74eccdd63080d2ae59fe494fc21c13f4bb339"
+          }
+        },
+        {
+          "client_id": "489234424043-29rlvr00gun1nr7afh3jnlv01hmmpoqi.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyA1CsI6lJCuBDRtPjHtg_lFesbWbHXGhnk"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "489234424043-29rlvr00gun1nr7afh3jnlv01hmmpoqi.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
